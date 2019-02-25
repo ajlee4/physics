@@ -1,0 +1,40 @@
+.main {
+  display: block;
+  position: relative;
+
+  &-block__inner {
+    height: 100vh;
+  }
+
+  &-block__title {
+    z-index: 2;
+    color: #fff;
+    @include montserrat-bold;
+    letter-spacing: 5px;
+    font-size: 45px;
+    line-height: 45px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &-block__content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .news {
+    z-index: 9999;
+    color: black;
+  }
+}

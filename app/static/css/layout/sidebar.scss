@@ -1,0 +1,12 @@
+.main-sidebar {
+  max-width: 35%;
+}
+
+.sidebar {
+  &__inner {
+    background-color: #fff;
+    padding: 30px;
+    margin-left: 20px;
+  }
+}
+

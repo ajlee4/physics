@@ -1,0 +1,47 @@
+.breadcrumbs {
+    display: flex;
+    padding: 25px 20px;
+    color:#777;
+ li {
+        margin-right: 15px;
+        position: relative;
+        color:black;
+        a {
+            position: relative;
+    
+            &:before {
+              content: '';
+              bottom: 0;
+              left: 50%;
+              position: absolute;
+           width: 0;
+              height: 2px;
+              background-color: #000;
+              transition: 0.3s;
+              transform: translateX(-50%);
+            }
+    
+            &:hover:before {
+                width: 100%;
+            }
+    
+            &:hover {
+              color: #0a1d3d;
+            }
+        }
+        &:after {
+            content: '/';
+            position: absolute;
+            top: 0;
+            right: -10px;
+         
+        }
+    }
+    .active {
+      
+    &:after {
+        display: none;
+      
+    }
+    }
+}

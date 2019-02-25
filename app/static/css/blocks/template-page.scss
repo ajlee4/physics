@@ -1,0 +1,29 @@
+.page-template {
+  padding-top: 100px;
+}
+
+.content {
+  background-color: #fff;
+  padding: 30px 20px;
+  height: 100%;
+
+  &-info {
+    &__title {
+      font-size: 24px;
+      line-height: 24px;
+      margin-bottom: 30px;
+      @include montserrat-medium;
+      color: #0a1d3d;
+    }
+
+    &__date {
+      color: #8c8c91;
+      @include montserrat-bold;
+      margin-bottom: 20px;
+    }
+
+    &__text {
+      @include montserrat-regular;
+    }
+  }
+}

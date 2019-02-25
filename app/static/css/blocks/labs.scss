@@ -1,0 +1,75 @@
+.labs {
+  &-list {
+    font-size: 18px;
+    line-height: 18px;
+    @include montserrat-medium;
+
+    li {
+      a {
+        position: relative;
+
+        &:before {
+          content: '';
+          bottom: 0;
+          left: 50%;
+          position: absolute;
+        width: 0;
+          height: 1px;
+          background-color: #000;
+          transition: 0.2s;
+          transform: translateX(-50%);
+        }
+
+        &:hover:before {
+          width: 100%;
+        }
+
+        &:hover {
+          color: #0a1d3d;
+        }
+      }
+      color: #8c8c91;
+      margin-bottom: 16px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &-desc {
+    display: flex;
+    justify-content: space-between;
+
+    .leaders-item {
+      display: block;
+
+      &__info {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  &-info {
+    max-width: 60%;
+
+    p {
+      margin-bottom: 10px;
+      @include montserrat-regular;
+    }
+
+    b {
+      @include montserrat-bold;
+    }
+
+    li {
+      margin-left: 15px;
+      margin-bottom: 10px;
+      @include montserrat-regular;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

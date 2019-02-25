@@ -1,0 +1,35 @@
+.contact {
+  &-title {
+    @include montserrat-bold;
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+
+  &-info {
+    margin-bottom: 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &__title {
+      @include montserrat-medium;
+      font-size: 18px;
+      line-height: 18px;
+      margin-bottom: 15px;
+    }
+
+    &__text {
+      @include montserrat-light;
+      font-size: 16px;
+      line-height: 16px;
+      letter-spacing: 2px;
+    }
+  }
+}
+
+.map {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
