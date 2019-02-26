@@ -13,20 +13,6 @@
       left: 10px;
     }
 
-    &:before {
-      content: '';
-      visibility: visible;
-      @include sprite("slider-prev");
-    }
-
-    &:hover:before {
-      @include sprite("slider-prev-hover");
-      transform: rotate(180deg);
-      @include tablet-and-phone {
-        @include sprite("slider-prev");
-        transform: rotate(0);
-      }
-    }
   }
 
   &-next {
@@ -43,21 +29,7 @@
       right: 10px;
     }
 
-    &:before {
-      content: '';
-      visibility: visible;
-      @include sprite("slider-prev");
-      transform: rotate(180deg);
-    }
 
-    &:hover:before {
-      @include sprite("slider-prev-hover");
-      transform: rotate(0);
-      @include tablet-and-phone {
-        @include sprite("slider-prev");
-        transform: rotate(180deg);
-      }
-    }
   }
 
   &-dots {
