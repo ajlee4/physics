@@ -10,9 +10,9 @@ $(function() {
 	}
 
 	Accordion.prototype.dropdown = function(e) {
-		var $el = e.data.el;
-			$this = $(this),
-			$next = $this.next();
+		const $el = e.data.el;
+		const	$this = $(this);
+		const	$next = $this.next();
 
 		$next.slideToggle();
 		$this.parent().toggleClass('open');

@@ -2,7 +2,9 @@
   &-item {
     display: flex;
     margin-bottom: 20px;
-
+    @include tablet-and-phone {
+      flex-direction: column;
+    }
     &:last-child {
       margin-bottom: 0;
     }
@@ -18,6 +20,7 @@
 
     &__info {
       @include tablet-and-phone {
+        margin-top: 20px;
         text-align: center;
       }
     }
