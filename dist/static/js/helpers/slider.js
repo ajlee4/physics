@@ -8,15 +8,7 @@ $(document).ready(function () {
     fade: true
   });
 });
-$('.about__row').slick({
-  dots: true,
-  mobileFirst: true,
-  responsive: [{
-    breakpoint: 767,
-    settings: 'unslick'
-  }]
-});
-$('.portfolio__list').slick({
+$('.news-slider').slick({
   dots: true,
   mobileFirst: true,
   responsive: [{

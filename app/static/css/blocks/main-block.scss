@@ -15,6 +15,17 @@
     line-height: 45px;
     text-transform: uppercase;
     text-align: center;
+    @include mobile {
+      max-width: 100%;
+      font-size: 17px;
+      line-height: 17px;
+    }
+    @include tablet {
+      position: absolute;
+      font-size: 22px;
+      line-height: 22px;
+      top: 35%;
+    }
   }
 
   &-block__content {
@@ -31,6 +42,9 @@
     bottom: 0;
     background-position: center;
     background-size: cover;
+    @include mobile {
+      background-position: left;
+    }
   }
 
   .news {

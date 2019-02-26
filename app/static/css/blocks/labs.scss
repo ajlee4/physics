@@ -13,7 +13,7 @@
           bottom: 0;
           left: 50%;
           position: absolute;
-        width: 0;
+          width: 0;
           height: 1px;
           background-color: #000;
           transition: 0.2s;
@@ -40,6 +40,9 @@
   &-desc {
     display: flex;
     justify-content: space-between;
+    @include tablet-and-phone {
+      flex-direction: column;
+    }
 
     .leaders-item {
       display: block;
@@ -52,6 +55,9 @@
 
   &-info {
     max-width: 60%;
+    @include tablet-and-phone {
+      max-width: 100%;
+    }
 
     p {
       margin-bottom: 10px;

@@ -8,7 +8,18 @@
     }
 
     &__img {
+      @include tablet-and-phone {
+        display: flex;
+        justify-content: center;
+        margin-right: 0;
+      }
       margin-right: 40px;
+    }
+
+    &__info {
+      @include tablet-and-phone {
+        text-align: center;
+      }
     }
 
     &__name {

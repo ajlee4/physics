@@ -1,61 +1,107 @@
 .footer {
-background-color: #123a44;
-margin-top: 20px;
+  background-color: #123a44;
+  margin-top: 20px;
 
-&__inner {
-padding-top: 20px;
-padding-bottom: 20px;
-  display: flex;
-  justify-content: space-between;
-}
-&__logo {
-  &__info {
-    margin-top: 10px;
-    color:#fff;
-  }
-
-}
-&__contact {
-  max-width: 350px;
-  div {
-    margin-bottom: 10px;
-    &:last-child {
-      margin-bottom: 0;
+  &__inner {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    @include mobile {
+      display: flex;
+      flex-direction: column-reverse;
     }
   }
-}
-&__phone {
-  position: relative;
-  &:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -25px;
-    content: '';
-  @include sprite('footer-phone');
-}
-}
-&__email {
-  position: relative;
-  &:before {
-    position: absolute;
-    top: 3px;
-    left: -25px;
-    content: '';
-  @include sprite('footer-email');
+
+  &__logo {
+    a {
+      display: block;
+      @include mobile {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
+    }
+
+    &__info {
+      margin-top: 10px;
+      color: #fff;
+      @include mobile {
+        text-align: center;
+      }
+    }
   }
-}
-&__email , &__phone {
-  margin-left: 25px;
-  font-size: 16px;
-  line-height: 16px;
-  @include montserrat-bold;
-  color: #fff;
-}
-&__adress {
-  font-size: 16px;
-  line-height: 16px;
-  @include montserrat-light;
-  color: #fff;
-}
+
+  &__contact {
+    max-width: 350px;
+    @include mobile {
+      max-width: 100%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+    }
+    @include tablet {
+      text-align: center;
+    }
+
+    div {
+      margin-bottom: 10px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__phone {
+    a {
+      position: relative;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -25px;
+        content: '';
+        @include sprite('footer-phone');
+      }
+    }
+  }
+
+  &__email {
+    a {
+      position: relative;
+
+      &:before {
+        position: absolute;
+        top: 3px;
+        left: -25px;
+        content: '';
+        @include sprite('footer-email');
+      }
+    }
+  }
+
+  &__email,
+  &__phone {
+    display: inline-block;
+    margin-left: 25px;
+    font-size: 16px;
+    line-height: 16px;
+    @include montserrat-bold;
+    color: #fff;
+    @include tablet {
+      font-size: 14px;
+    }
+  }
+
+  &__adress {
+    font-size: 16px;
+    line-height: 16px;
+    @include montserrat-light;
+    color: #fff;
+    @include tablet {
+      font-size: 14px;
+    }
+  }
 }

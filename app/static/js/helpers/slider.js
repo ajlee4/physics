@@ -9,7 +9,7 @@ $(document).ready(function(){
 
 
 
-  $('.about__row').slick({
+  $('.news-slider').slick({
       dots: true,
     mobileFirst: true,
     responsive: [
@@ -20,15 +20,5 @@ $(document).ready(function(){
     ]
   });
 
-  
-  $('.portfolio__list').slick({
-    dots: true,
-  mobileFirst: true,
-  responsive: [
-        {
-                breakpoint: 767,
-                settings: 'unslick'
-        }
-  ]
-});
+ 
 
