@@ -5,6 +5,7 @@
     @include montserrat-medium;
 
     li {
+
       a {
         position: relative;
 
@@ -55,13 +56,14 @@
 
   &-info {
     max-width: 60%;
+  
     @include tablet-and-phone {
       max-width: 100%;
     }
 
     p {
       margin-bottom: 10px;
-      @include montserrat-regular;
+    
     }
 
     b {
@@ -72,6 +74,7 @@
       margin-left: 15px;
       margin-bottom: 10px;
       @include montserrat-regular;
+   
 
       &:last-child {
         margin-bottom: 0;

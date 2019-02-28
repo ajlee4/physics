@@ -41,6 +41,10 @@ $fonts_dir: '../fonts/';
 @mixin lato-bold() {
   @include font-mixin('Lato-Bold');
 }
+@include font('montserrat/Montserrat-Regular', 'Montserrat-Regular');
+@mixin montserrat-regular() {
+  @include font-mixin('Montserrat-Regular');
+}
 
 @include font('montserrat/Montserrat-Bold', 'Montserrat-Bold');
 @mixin montserrat-bold() {
@@ -50,10 +54,7 @@ $fonts_dir: '../fonts/';
 @mixin montserrat-light() {
   @include font-mixin('Montserrat-Light');
 }
-@include font('montserrat/Montserrat-Regular', 'Montserrat-Regular');
-@mixin montserrat-regular() {
-  @include font-mixin('Montserrat-Regular');
-}
+
 @include font('montserrat/Montserrat-Medium', 'Montserrat-Medium');
 @mixin montserrat-medium() {
   @include font-mixin('Montserrat-Medium');
