@@ -1,9 +1,8 @@
 $(document).ready(function(){
-    $('.main-slider').slick({
-         autoplay:true,
-      autoplaySpeed:2000,
+    $('.leaders-slider').slick({
+ 
       dots:true,
-      fade:true,
+  
     });
   });
 
@@ -20,5 +19,5 @@ $(document).ready(function(){
     ]
   });
 
- 
+
 
